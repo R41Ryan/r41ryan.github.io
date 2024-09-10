@@ -1,0 +1,21 @@
+html {
+    background-color: #F5F5F5;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1, .header h2, .header address {
+    margin: 0;
+    padding: 30px;
+}
+
+.contact-info {
+    background-color: #48CFCB;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: #229799;
+}
