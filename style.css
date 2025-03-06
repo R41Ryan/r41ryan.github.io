@@ -1,112 +1,16 @@
-* {
-    font-family: 'Lato', sans-serif;
+#profile-img {
+    border-radius: 25%;
 }
 
-html {
-    background-color: #F5F5F5;
+#hero h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.header {
-    text-align: center;
+.skill-icon {
+    border-radius: 10%;
 }
 
-.header h1, .header h2, .header address {
-    margin: 0;
-    padding: 30px;
-}
-
-h2 {
-    font-size: 30pt;
-    text-align: center;
-    background-color: #48CFCB;
-    padding: 10px;
-}
-
-h3 {
-    font-size: 25px;
-    text-align: center;
-    background-color: #48CFCB;
-    padding: 5px;
-}
-
-button {
-    background-color:#229799;
-    font-weight: 600;
-    color: #424242;
-    padding: 20px;
-}
-
-.portfolio-title a {
-    color: #424242;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 33pt;
-}
-
-.contact-info {
-    background-color: #48CFCB;
-    width: 100%;
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: #424242;
-}
-
-.nav-bar {
-    background-color: #229799;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 110px;
-}
-
-.nav-bar > * {
-    font-size: 30pt;
-    padding: 10pt;
-    font-weight: 500;
-}
-
-.nav-bar a {
-    color: #424242;
-    text-decoration: none;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content > a {
-    align-self: center;
-}
-
-.project-links {
-    display: flex;
-    gap: 10px;
-}
-
-.project-links a {
-    background-color: #229799;
-    padding: 5px;
-    border: 2px solid #424242;
-    text-decoration: none;
-    font-weight: 600;
-    color: #424242;
-}
-
-.img-collection {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.img-collection img {
-    flex-basis: 200px;
-    max-width: 30%;
-}
-
-.itchio-widget {
-    align-self: center;
+.skill img {
+    width: 5rem;
+    margin: 1rem;
 }
