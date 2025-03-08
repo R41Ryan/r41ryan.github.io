@@ -2,8 +2,18 @@
     border-radius: 25%;
 }
 
-#hero h1 {
+h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-window {
+    background-color: rgb(194, 253, 255);
+    border-radius: 2.5%;
+}
+
+.project {
+    background-color: rgb(152, 215, 218);
+    border-radius: 2.5%;
 }
 
 .skill-icon {
@@ -13,8 +23,4 @@
 .skill img {
     width: 5rem;
     margin: 1rem;
-}
-
-.svg-icon {
-    
 }
