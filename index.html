@@ -1,117 +1,337 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>Ryan Huynh</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ryan Huynh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-        <section id="hero">
-            <div class="container col-xxl-8 px-4 py-5">
-                <div
-                    class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
-                        <img id="profile-img"
-                            src="./assets/images/profile_img.jpg"
-                            class="d-block mx-lg-auto img-fluid"
-                            alt="Profile Picture of Ryan Huynh"
-                            loading="eager">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1
-                            class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ryan
-                            Huynh</h1>
-                        <p class="lead">I'm a software engineer graduate from
-                            the University of Calgary. I specialize in multiple
-                            programming languages with
-                            experience in developing web applications and
-                            desktop software. I enjoy solving problems using
-                            software solutions and am always looking
-                            for opportunities to innovate and build practical
-                            products.
-                        </p>
-                        <div
-                            class="justify-content-md-start">
-                            <a
-                                href="./assets/documents/Ryan Huynh - Software Engineering Resume.pdf"
-                                download>
-                                <button type="button"
-                                    class="btn btn-primary btn-lg me-md-2"><img
-                                        src="./assets/images/box-arrow-down.svg"
-                                        alt="download">
-                                    Resume</button>
-                            </a>
-                        </div>
-                    </div>
+  <body>
+    <section id="hero">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              id="profile-img"
+              src="./assets/images/profile_img.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Profile Picture of Ryan Huynh"
+              loading="eager"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Ryan Huynh
+            </h1>
+            <p class="lead">
+              I'm a software engineer graduate from the University of Calgary. I
+              specialize in multiple programming languages with experience in
+              developing web applications and desktop software. I enjoy solving
+              problems using software solutions and am always looking for
+              opportunities to innovate and build practical products.
+            </p>
+            <div class="justify-content-md-start">
+              <a
+                href="./assets/documents/Ryan Huynh - Software Engineering Resume.pdf"
+                download
+              >
+                <button type="button" class="svg-icon btn btn-primary btn-lg me-md-2 mb-md-2">
+                  <img
+                    src="./assets/images/box-arrow-down.svg"
+                    alt="download"
+                  />
+                  Resume
+                </button>
+              </a>
+              <a href="mailto:ryanhuynh64@gmail.com"
+                ><button type="button" class="svg-icon btn btn-primary btn-lg me-md-2 mb-md-2">
+                  <img
+                    src="./assets/images/envelope.svg"
+                    alt="download"
+                  /> ryanhuynh64@gmail.com
+                </button></a
+              >
+              <a href="tel:+15874393288"
+                ><button type="button" class="svg-icon btn btn-primary btn-lg me-md-2 mb-md-2">
+                  <img
+                    src="./assets/images/telephone.svg"
+                    alt="download"
+                  /> (587) 439-3288
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">My Skills</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="skill col">
+            <div
+              class="svg-icon skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./assets/images/code-square.svg" alt="code square" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Programming Languages</h3>
+            <ul>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <div class="skill col">
+            <div
+              class="svg-icon skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./assets/images/gear.svg" alt="gear" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Technologies</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Godot</li>
+              <li>Unreal Engine</li>
+              <li>Unity</li>
+            </ul>
+          </div>
+          <div class="skill col">
+            <div
+              class="svg-icon skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./assets/images/chat-fill.svg" alt="chat bubble" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Soft Skills</h3>
+            <ul>
+              <li>Team Player</li>
+              <li>Communicator</li>
+              <li>Hard Worker</li>
+              <li>Problem Solver</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="mb-5">
+      <div class="container">
+        <h2 class="row pb-2 border-bottom">Projects</h2>
+      </div>
+      <div class="project container pt-3">
+        <h3 class="row">Snake Game Recration</h3>
+        <p class="row">This is a recreation of the game, Snake</p>
+        <div class="row">
+          <div class="col-lg-8 ps-0">
+            <h4 class="pb-2 border-bottom">Applied skills</h4>
+            <ul>
+              <li>C++</li>
+              <li>SDL Library</li>
+              <li>Object Oriented Programming</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 ps-0">
+            <div id="carouselSnakeIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselSnakeIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselSnakeIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselSnakeIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/snake_menu.PNG"
+                    class="d-block w-100"
+                    alt="Snake Game Main Menu"
+                  />
                 </div>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="container px-4 py-5">
-                <h2 class="pb-2 border-bottom">My Skills</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="skill col">
-                        <div
-                            class="skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <img src="./assets/images/code-square.svg"
-                                alt="code square">
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Programming
-                            Languages</h3>
-                        <ul>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-                    <div class="skill col">
-                        <div
-                            class="skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <img src="./assets/images/gear.svg" alt="gear">
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Technologies</h3>
-                        <ul>
-                            <li>Bootstrap</li>
-                            <li>Godot</li>
-                            <li>Unreal Engine</li>
-                            <li>Unity</li>
-                        </ul>
-                    </div>
-                    <div class="skill col">
-                        <div
-                            class="skill-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <img src="./assets/images/chat-fill.svg"
-                                alt="chat bubble">
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Soft Skills</h3>
-                        <ul>
-                            <li>Team Player</li>
-                            <li>Communicator</li>
-                            <li>Hard Worker</li>
-                            <li>Problem Solver</li>
-                            <li>Project Management</li>
-                        </ul>
-                    </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/snake_in_game.PNG"
+                    class="d-block w-100"
+                    alt="Snake Game in game screenshot"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/snake_game_over.PNG"
+                    class="d-block w-100"
+                    alt="Snake Game game over menu"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselSnakeIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselSnakeIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <h2 class="pb-2 border-bottom">Projects</h2>
+          </div>
+        </div>
+      </div>
+      <div class="project container pt-3">
+        <h3 class="row">Game of life simulator</h3>
+        <p class="row">This is a simulation of Conway's Game of Life</p>
+        <div class="row">
+          <div class="col-lg-8 ps-0">
+            <h4 class="pb-2 border-bottom">Applied skills</h4>
+            <ul>
+              <li>C++</li>
+              <li>SDL Library</li>
+              <li>Object Oriented Programming</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 ps-0">
+            <div id="carouselGameOfLifeIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselGameOfLifeIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselGameOfLifeIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselGameOfLifeIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/game-of-life-draw.gif"
+                    class="d-block w-100"
+                    alt="GIF of drawing randomly and simulating"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/game-of-life-hi.gif"
+                    class="d-block w-100"
+                    alt="GIF of simulating after writing 'HI!'"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/game-of-life-star.gif"
+                    class="d-block w-100"
+                    alt="GIF of simulating after drawing a star"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselGameOfLifeIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselGameOfLifeIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </section>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+      <div class="project container pt-3">
+        <h3 class="row">Gene rEvolution</h3>
+        <p class="row">
+          This is an original game developed by me. You play as a soldier that
+          needs to fight and survive against waves of mutants
+        </p>
+        <div class="row">
+          <h4 class="pb-2 border-bottom">Applied skills</h4>
+          <ul>
+            <li>Godot</li>
+            <li>GDScript</li>
+            <li>Object Oriented Programming</li>
+            <li>Game Design</li>
+          </ul>
+        </div>
+        <div class="row">
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/3147322"
+            width="552"
+            height="167"
+            ><a href="https://r41ryan.itch.io/gene-revolution"
+              >Gene rEvolution by R41Ryan</a
+            ></iframe
+          >
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
