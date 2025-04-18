@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #136e92;
+    background-color: var(--color-primary);
     color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;

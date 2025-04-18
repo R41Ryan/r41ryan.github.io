@@ -1,3 +1,30 @@
+@keyframes moving-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --color-primary: #136e92;
+  --color-secondary: rgb(197, 255, 255);
+  --color-accent: white;
+  --color-accent-secondary: black;
+}
+
 html {
-    background-color: rgb(197, 255, 255);
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      var(--color-primary),
+      var(--color-secondary),
+      var(--color-accent)
+    );
+  background-size: 200% 200%;
+  animation: moving-background 10s ease-in-out infinite;
 }
