@@ -1,20 +1,22 @@
+import "./Header.css";
+
 function Header() {
   return (
-    <div className="header">
+    <header>
       <div className="header-left-content">
         <h1>Ryan Huynh</h1>
         <h2>Software Engineer</h2>
       </div>
-      <div className="header-right-content navbar">
-        <ul className="navbar-list">
+      <div className="header-right-content">
+        <ul className="navbar">
           <li className="navlink">Home</li>
-          <li className="navlink">Learn About me</li>
-          <li className="navlink">See my Skills</li>
-          <li className="navlink">Check out my projects</li>
+          <li className="navlink">About me</li>
+          <li className="navlink">My Skills</li>
+          <li className="navlink">My Portfolio</li>
           <li className="navlink">Contact me</li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
 
