@@ -1,0 +1,24 @@
+.home-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 5rem;
+}
+
+.home-page h1 {
+  font-size: 5rem;
+}
+
+.home-page h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.home-page h3 {
+    font-size: 2rem;
+}
+
+.home-page_content {
+    display: flex;
+    flex-direction: column;
+}
