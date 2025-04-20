@@ -11,6 +11,7 @@ function AboutMe() {
         products, whether that's creating a website for a business or a game to
         train mental math skills.
       </p>
+      <button >Download Resume</button>
     </div>
   );
 }
