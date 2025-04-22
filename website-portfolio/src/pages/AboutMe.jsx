@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <div>
+    <div id="about-me" className="about-me">
       <h1>About Me</h1>
       <p>
         I'm a software engineer graduate from the University of Calgary. I

@@ -49,7 +49,7 @@ header {
     padding: 0;
 }
 
-.navbar li{
+.navlink {
     margin: 0 15px;
     cursor: pointer;
     font-size: larger;
@@ -60,7 +60,7 @@ header {
     border-radius: 10%;
 }
 
-.navbar li:hover {
+.navlink:hover {
     scale: 1.2;
     box-shadow: 0 0 30px rgba(255, 255, 255, 08);
     animation: dance 2s infinite ease;
