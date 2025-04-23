@@ -1,5 +1,5 @@
 import "./MainPage.css";
-import "./AboutMe.css"
+import "./AboutMe.css";
 import TextPanel from "../components/TextPanel";
 
 function MainPage() {
@@ -47,7 +47,8 @@ function MainPage() {
             </a>
             <a href="mailto:ryanhuynh64@gmail.com">
               <button>
-                <img src="images/envelope.svg" /> Email Me: ryanhuynh64@gmail.com
+                <img src="images/envelope.svg" /> Email Me:
+                ryanhuynh64@gmail.com
               </button>
             </a>
             <a href="tel:+15874393288">
@@ -81,6 +82,45 @@ function MainPage() {
               {item.content}
             </TextPanel>
           ))}
+        </div>
+      </div>
+      <div className="skills">
+        <h2>Skills</h2>
+        <div className="skills_content">
+          <div className="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>HTML/CSS</li>
+              <li>GDScript</li>
+            </ul>
+          </div>
+          <div className="technologies">
+            <h3>Technologies</h3>
+            <ul>
+              <li>Git, Github</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>React</li>
+              <li>Supabase</li>
+              <li>Godot</li>
+            </ul>
+          </div>
+          <div className="soft-skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communicator</li>
+              <li>Problem Solver</li>
+              <li>Team Player</li>
+              <li>Time Management</li>
+              <li>Adaptable</li>
+              <li>Creative Thinker</li>
+              <li>Open to Feedback</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
