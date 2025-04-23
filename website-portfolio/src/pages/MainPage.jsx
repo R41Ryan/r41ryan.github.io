@@ -1,6 +1,31 @@
 import "./MainPage.css";
+import "./AboutMe.css"
+import TextPanel from "../components/TextPanel";
 
 function MainPage() {
+  const aboutMe = [
+    {
+      title: "Early Interest in Coding",
+      content:
+        "I started coding in the 5th grade, when a teacher offered me school credit for completing a JavaScript course on Khan Academy. I didn't take it too seriously at the time, but it planted the seed. Since then, I've taken several extracurricular classes — including Scratch for object-oriented programming, HTML/CSS for web development, and high school computer science, where I learned the basics of C++ and Java. I even programmed robots using Processing in a robotics course. It wasn't until my first year of university that I realized I wanted to pursue software engineering seriously. Since then, I've been working hard to expand my knowledge and skills by building a range of projects — from a plagiarism checker for a professor to a video game and a website for a local business. I'm constantly looking for new opportunities to learn, grow, and explore what I can create.",
+    },
+    {
+      title: "Current Focus",
+      content:
+        "Right now, I'm looking for a full-time software engineering role. In the meantime, I'm focused on learning and loving web development, especially tools like React, Node.js, Express, and Supabase. I've been putting these skills into practice by creating web projects — including this portfolio site.",
+    },
+    {
+      title: "Future Aspirations",
+      content:
+        "My goal is to become a software engineer and web developer who can solve real-world problems through creative and effective web solutions. I want to innovate and build practical products that help people and make a positive impact.",
+    },
+    {
+      title: "Hobbies",
+      content:
+        "Outside of coding, I enjoy playing strategy games like Total War, coming up with fan-fiction ideas for my favorite games and movies, and spending time with friends and family. I also enjoy playing a bit of Dungeons & Dragons.",
+    },
+  ];
+
   return (
     <div>
       <div className="home-page">
@@ -35,8 +60,7 @@ function MainPage() {
         </div>
       </div>
       <div id="about-me" className="about-me">
-        <h1>About Me</h1>
-
+        <h2>About Me</h2>
         <p className="intro">
           I'm a software engineering graduate from the University of Calgary. I
           specialize in multiple programming languages, such as JavaScript and
@@ -45,48 +69,17 @@ function MainPage() {
           opportunities to innovate and build practical tools — whether it's a
           website for a business or a game that helps train mental math skills.
         </p>
-
-        <h2>Early Interest in Coding</h2>
-        <p className="history">
-          I started coding in the 5th grade, when a teacher offered me school
-          credit for completing a JavaScript course on Khan Academy. I didn't
-          take it too seriously at the time, but it planted the seed. Since
-          then, I've taken several extracurricular classes — including Scratch
-          for object-oriented programming, HTML/CSS for web development, and
-          high school computer science, where I learned the basics of C++ and
-          Java. I even programmed robots using Processing in a robotics course.
-          It wasn't until my first year of university that I realized I wanted
-          to pursue software engineering seriously. Since then, I've been
-          working hard to expand my knowledge and skills by building a range of
-          projects — from a plagiarism checker for a professor to a video game
-          and a website for a local business. I'm constantly looking for new
-          opportunities to learn, grow, and explore what I can create.
-        </p>
-
-        <h2>Current Focus</h2>
-        <p className="current">
-          Right now, I'm looking for a full-time software engineering role. In
-          the meantime, I'm focused on learning and loving web development,
-          especially tools like React, Node.js, Express, and Supabase. I've been
-          putting these skills into practice by creating web projects —
-          including this portfolio site.
-        </p>
-
-        <h2>Future Aspirations</h2>
-        <p className="goals">
-          My goal is to become a software engineer and web developer who can
-          solve real-world problems through creative and effective web
-          solutions. I want to innovate and build practical products that help
-          people and make a positive impact.
-        </p>
-
-        <h2>Hobbies</h2>
-        <p className="hobbies">
-          Outside of coding, I enjoy playing strategy games like Total War,
-          coming up with fan-fiction ideas for my favorite games and movies, and
-          spending time with friends and family. I also enjoy playing a bit of
-          Dungeons & Dragons.
-        </p>
+        <div className="about-me_content">
+          {aboutMe.map((item, index) => (
+            <TextPanel
+              key={index}
+              title={item.title}
+              className="about-me_text-panel"
+            >
+              {item.content}
+            </TextPanel>
+          ))}
+        </div>
       </div>
     </div>
   );
