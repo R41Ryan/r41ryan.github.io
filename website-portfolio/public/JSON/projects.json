@@ -1,16 +1,16 @@
 [
     {
         "id": "quick-maths",
-        "name": "Quick Maths",
+        "title": "Quick Maths",
         "description": "A web app that helps you practice your mental maths skills. It generates random maths questions and gives you a score based on your performance.",
         "technologies": ["React", "JavaScript", "CSS", "HTML", "Supabase"],
-        "images": ["images/quick-maths-in-game.PNG", "quick-maths-main.PNG"],
+        "images": ["images/quick-maths-in-game.PNG", "images/quick-maths-main.PNG"],
         "repo": "https://github.com/R41Ryan/Quick-Maths-Web",
         "link": "https://r41ryan.github.io/quick-maths-web/"
     },
     {
         "id": "portfolio",
-        "name": "Portfolio Website",
+        "title": "Portfolio Website",
         "description": "My personal portfolio website showcasing my projects and skills.",
         "technologies": ["React", "JavaScript", "CSS", "HTML"],
         "repo": "https://github.com/R41Ryan/r41ryan.github.io",
@@ -18,7 +18,7 @@
     },
     {
         "id": "game-of-life",
-        "name": "Game of Life",
+        "title": "Game of Life",
         "description": "A desktop app that simulates Conway's Game of Life, a cellular automaton devised by the British mathematician John Horton Conway",
         "technologies": ["C++", "SDL2"],
         "images": ["images/game-of-life-draw.gif", "images/game-of-life-hi.gif", "images/game-of-life-star.gif"],
@@ -26,16 +26,16 @@
     },
     {
         "id": "gene-revolution",
-        "name": "Gene rEvoution",
+        "title": "Gene rEvoution",
         "description": "A video game where you play as a soldier tasked with clearing out den of mutated creatures. You can upgrade your weapons by using points earned from killing enemies.",
         "technologies": ["Godot", "GDScript"],
-        "images": ["images/gene-revolution-screenshot.PNG"],
+        "images": ["images/gene-revolution-screenshot.png"],
         "repo": "https://github.com/R41Ryan/Gene-rEvolution-Godot",
         "link": "https://r41ryan.itch.io/gene-revolution"
     },
     {
         "id": "snake-game",
-        "name": "Snake Game",
+        "title": "Snake Game",
         "description": "A simple snake game where you control a snake to eat food and grow longer. The game ends when the snake collides with itself or the walls.",
         "technologies": ["C++", "SDL2"],
         "images": ["images/snake-menu.PNG", "images/snake-game-over.PNG", "images/snake-in-game.PNG"],
@@ -43,7 +43,7 @@
     },
     {
         "id": "pdf-plagiarism-checker",
-        "name": "PDF Plagiarism Checker",
+        "title": "PDF Plagiarism Checker",
         "description": "A desktop app where you can check if a collection of PDF files have plagiarised each other. It uses a custom algorithm to check for similarities between the files.",
         "technologies": ["Java"],
         "repo": "https://github.com/R41Ryan/Plagiarism-Checker"

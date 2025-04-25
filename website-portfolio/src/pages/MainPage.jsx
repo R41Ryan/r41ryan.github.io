@@ -2,6 +2,7 @@ import "./MainPage.css";
 import "./AboutMe.css";
 import "./Skills.css";
 import TextPanel from "../components/TextPanel";
+import { useEffect, useState } from "react";
 
 function MainPage() {
   const aboutMe = [
@@ -26,6 +27,19 @@ function MainPage() {
         "Outside of coding, I enjoy playing strategy games like Total War, coming up with fan-fiction ideas for my favorite games and movies, and spending time with friends and family. I also enjoy playing a bit of Dungeons & Dragons.",
     },
   ];
+
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/JSON/projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setProjects(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching projects:", error);
+      });
+  }, []);
 
   return (
     <div>
@@ -89,7 +103,10 @@ function MainPage() {
         <h2>Skills</h2>
         <div className="skills_content">
           <div className="languages">
-            <h3><img src="./images/code-square.svg" /><div>Languages</div></h3>
+            <h3>
+              <img src="./images/code-square.svg" />
+              <div>Languages</div>
+            </h3>
             <ul>
               <li>JavaScript</li>
               <li>Python</li>
@@ -100,7 +117,10 @@ function MainPage() {
             </ul>
           </div>
           <div className="technologies">
-            <h3><img src="./images/gear.svg" /><div>Technologies</div></h3>
+            <h3>
+              <img src="./images/gear.svg" />
+              <div>Technologies</div>
+            </h3>
             <ul>
               <li>Git, Github</li>
               <li>Node.js</li>
@@ -111,7 +131,10 @@ function MainPage() {
             </ul>
           </div>
           <div className="soft-skills">
-            <h3><img src="./images/chat-fill.svg" /><div>Soft Skills</div></h3>
+            <h3>
+              <img src="./images/chat-fill.svg" />
+              <div>Soft Skills</div>
+            </h3>
             <ul>
               <li>Communicator</li>
               <li>Problem Solver</li>
@@ -122,6 +145,51 @@ function MainPage() {
               <li>Open to Feedback</li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="projects">
+        {projects.length > 0 ? <h2>Projects</h2> : <h2>Loading Projects...</h2>}
+        <div className="projects_content">
+          {projects.map((project) => (
+            <div key={project.id} className="project-panel">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-images">
+                {project.images &&
+                  project.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`Project ${project.id} image ${index + 1}`}
+                    />
+                  ))}
+              </div>
+              <div className="project-links">
+                {project.repo && (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>
+                      <img src="images/github.svg" alt="GitHub" /> View Code
+                    </button>
+                  </a>
+                )}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>
+                      <img src="images/box-arrow-up-right.svg" alt="Live Demo" /> View Live
+                    </button>
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

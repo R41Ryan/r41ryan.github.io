@@ -9,7 +9,6 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      console.log(scrollTop, pastScrollHeight.current);
       if (scrollTop > pastScrollHeight.current) {
         setIsHidden(true);
       }
