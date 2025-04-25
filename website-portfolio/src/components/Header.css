@@ -22,6 +22,7 @@ header {
     color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
+    z-index: 1000;
 }
 
 .header-left-content {
