@@ -1,5 +1,6 @@
 import "./MainPage.css";
 import "./AboutMe.css";
+import "./Skills.css";
 import TextPanel from "../components/TextPanel";
 
 function MainPage() {
@@ -88,7 +89,7 @@ function MainPage() {
         <h2>Skills</h2>
         <div className="skills_content">
           <div className="languages">
-            <h3>Languages</h3>
+            <h3><img src="./images/code-square.svg" /><div>Languages</div></h3>
             <ul>
               <li>JavaScript</li>
               <li>Python</li>
@@ -99,7 +100,7 @@ function MainPage() {
             </ul>
           </div>
           <div className="technologies">
-            <h3>Technologies</h3>
+            <h3><img src="./images/gear.svg" /><div>Technologies</div></h3>
             <ul>
               <li>Git, Github</li>
               <li>Node.js</li>
@@ -110,7 +111,7 @@ function MainPage() {
             </ul>
           </div>
           <div className="soft-skills">
-            <h3>Soft Skills</h3>
+            <h3><img src="./images/chat-fill.svg" /><div>Soft Skills</div></h3>
             <ul>
               <li>Communicator</li>
               <li>Problem Solver</li>

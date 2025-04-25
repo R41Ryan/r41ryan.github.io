@@ -39,32 +39,3 @@ body {
   background-size: 200% 200%;
   animation: moving-background 10s ease-in-out infinite;
 }
-
-
-.home-page_buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.home-page_buttons a {
-  text-decoration: none;
-}
-
-.home-page_buttons button {
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background-color: var(--color-secondary);
-  color: var(--color-accent-secondary);
-  padding: 0.5rem 1rem;
-  border: var(--color-primary) 2px solid;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease
-}
-
-.home-page_buttons button:hover {
-  background-color: var(--color-accent);
-  scale: 1.05;
-}
