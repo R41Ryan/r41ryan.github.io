@@ -35,8 +35,7 @@ function Header() {
         <ul className="navbar">
           <li className="navlink">About me</li>
           <li className="navlink">My Skills</li>
-          <li className="navlink">My Portfolio</li>
-          <li className="navlink">Contact me</li>
+          <li className="navlink">My Projects</li>
         </ul>
       </div>
     </header>

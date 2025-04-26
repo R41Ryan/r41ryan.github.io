@@ -1,6 +1,7 @@
 import "./MainPage.css";
 import "./AboutMe.css";
 import "./Skills.css";
+import "./Projects.css";
 import TextPanel from "../components/TextPanel";
 import { useEffect, useState } from "react";
 
@@ -154,16 +155,17 @@ function MainPage() {
             <div key={project.id} className="project-panel">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <div className="project-images">
-                {project.images &&
-                  project.images.map((image, index) => (
+              {project.images && (
+                <div className="project-images">
+                  {project.images.map((image, index) => (
                     <img
                       key={index}
                       src={image}
                       alt={`Project ${project.id} image ${index + 1}`}
                     />
                   ))}
-              </div>
+                </div>
+              )}
               <div className="project-links">
                 {project.repo && (
                   <a
@@ -172,7 +174,8 @@ function MainPage() {
                     rel="noopener noreferrer"
                   >
                     <button>
-                      <img src="images/github.svg" alt="GitHub" /> View Code
+                      <img src="images/github.svg" alt="GitHub" />{" "}
+                      <div>View Code</div>
                     </button>
                   </a>
                 )}
@@ -183,7 +186,11 @@ function MainPage() {
                     rel="noopener noreferrer"
                   >
                     <button>
-                      <img src="images/box-arrow-up-right.svg" alt="Live Demo" /> View Live
+                      <img
+                        src="images/box-arrow-up-right.svg"
+                        alt="Live Demo"
+                      />{" "}
+                      <div>View Live</div>
                     </button>
                   </a>
                 )}
