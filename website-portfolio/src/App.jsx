@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Header from "./components/Header";
 import MainPage from "./pages/MainPage";
+import Footer from "./components/Footer";
 function App() {
   const sectionRefs = {
     aboutMe: useRef(null),
@@ -10,10 +11,9 @@ function App() {
 
   return (
     <>
-      <main>
         <Header sectionRefs={sectionRefs} />
         <MainPage sectionRefs={sectionRefs} />
-      </main>
+        <Footer sectionRefs={sectionRefs} />
     </>
   );
 }

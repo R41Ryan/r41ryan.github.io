@@ -33,4 +33,5 @@ body {
     );
   background-size: 200% 200%;
   animation: moving-background 10s ease-in-out infinite;
+  margin: 0;
 }

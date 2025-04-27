@@ -43,8 +43,8 @@ function MainPage({sectionRefs}) {
   }, []);
 
   return (
-    <div>
-      <div className="home-page">
+    <main>
+      <section className="home-page">
         <div className="home-page_content">
           <h1>Ryan Huynh</h1>
           <h2>Software Engineer</h2>
@@ -77,7 +77,7 @@ function MainPage({sectionRefs}) {
         <div className="home-page_image">
           <img src="/images/profile_img.jpg" alt="Ryan Huynh" />
         </div>
-      </div>
+      </section>
       <div ref={sectionRefs.aboutMe} id="about-me" className="about-me">
         <h2>💻 About Me</h2>
         <p className="intro">
@@ -100,7 +100,7 @@ function MainPage({sectionRefs}) {
           ))}
         </div>
       </div>
-      <div ref={sectionRefs.skills} id="skills" className="skills">
+      <section ref={sectionRefs.skills} id="skills" className="skills">
         <h2>Skills</h2>
         <div className="skills_content">
           <div className="languages">
@@ -147,8 +147,8 @@ function MainPage({sectionRefs}) {
             </ul>
           </div>
         </div>
-      </div>
-      <div ref={sectionRefs.projects} id="projects" className="projects">
+      </section>
+      <section ref={sectionRefs.projects} id="projects" className="projects">
         {projects.length > 0 ? <h2>Projects</h2> : <h2>Loading Projects...</h2>}
         <div className="projects_content">
           {projects.map((project) => (
@@ -198,8 +198,8 @@ function MainPage({sectionRefs}) {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
