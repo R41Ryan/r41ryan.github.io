@@ -72,6 +72,11 @@ function MainPage({sectionRefs}) {
                 <img src="images/telephone.svg" /> Call Me: 587 (439-3288)
               </button>
             </a>
+            <a href="https://www.linkedin.com/in/ryan-huynh-7b5241194/" target="_blank" rel="noopener noreferrer">
+              <button>
+                <img src="images/linkedin.svg" /> LinkedIn
+              </button>
+            </a>
           </div>
         </div>
         <div className="home-page_image">
@@ -101,7 +106,7 @@ function MainPage({sectionRefs}) {
         </div>
       </div>
       <section ref={sectionRefs.skills} id="skills" className="skills">
-        <h2>Skills</h2>
+        <h2>🎓 Skills</h2>
         <div className="skills_content">
           <div className="languages">
             <h3>
@@ -149,7 +154,7 @@ function MainPage({sectionRefs}) {
         </div>
       </section>
       <section ref={sectionRefs.projects} id="projects" className="projects">
-        {projects.length > 0 ? <h2>Projects</h2> : <h2>Loading Projects...</h2>}
+        {projects.length > 0 ? <h2>🌐 Projects</h2> : <h2>Loading Projects...</h2>}
         <div className="projects_content">
           {projects.map((project) => (
             <div key={project.id} className="project-panel">
