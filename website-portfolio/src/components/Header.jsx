@@ -1,10 +1,22 @@
 import "./Header.css";
 import { useEffect, useRef, useState } from "react";
 
-function Header() {
+function Header({sectionRefs}) {
 
   const [isHidden, setIsHidden] = useState(false);
   const pastScrollHeight = useRef(0);
+  
+  const scrollToSection = (section) => {
+    if (section === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const sectionRef = sectionRefs[section];
+    if (sectionRef && sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth"});
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,15 +39,15 @@ function Header() {
 
   return (
     <header className={isHidden ? "hidden" : ""}>
-      <div className="header-left-content navlink">
+      <div onClick={() => {scrollToSection("home")}} className="header-left-content navlink">
         <h1>Ryan Huynh</h1>
         <h2>Software Engineer</h2>
       </div>
       <div className="header-right-content">
         <ul className="navbar">
-          <li className="navlink">About me</li>
-          <li className="navlink">My Skills</li>
-          <li className="navlink">My Projects</li>
+          <li onClick={() => {scrollToSection("aboutMe")}} className="navlink">About me</li>
+          <li onClick={() => {scrollToSection("skills")}} className="navlink">My Skills</li>
+          <li onClick={() => {scrollToSection("projects")}} className="navlink">My Projects</li>
         </ul>
       </div>
     </header>

@@ -5,7 +5,7 @@ import "./Projects.css";
 import TextPanel from "../components/TextPanel";
 import { useEffect, useState } from "react";
 
-function MainPage() {
+function MainPage({sectionRefs}) {
   const aboutMe = [
     {
       title: "📚 Early Interest in Coding",
@@ -78,7 +78,7 @@ function MainPage() {
           <img src="/images/profile_img.jpg" alt="Ryan Huynh" />
         </div>
       </div>
-      <div id="about-me" className="about-me">
+      <div ref={sectionRefs.aboutMe} id="about-me" className="about-me">
         <h2>💻 About Me</h2>
         <p className="intro">
           I'm a software engineering graduate from the University of Calgary. I
@@ -100,7 +100,7 @@ function MainPage() {
           ))}
         </div>
       </div>
-      <div className="skills">
+      <div ref={sectionRefs.skills} id="skills" className="skills">
         <h2>Skills</h2>
         <div className="skills_content">
           <div className="languages">
@@ -148,7 +148,7 @@ function MainPage() {
           </div>
         </div>
       </div>
-      <div className="projects">
+      <div ref={sectionRefs.projects} id="projects" className="projects">
         {projects.length > 0 ? <h2>Projects</h2> : <h2>Loading Projects...</h2>}
         <div className="projects_content">
           {projects.map((project) => (
