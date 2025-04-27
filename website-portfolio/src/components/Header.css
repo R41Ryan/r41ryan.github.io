@@ -52,6 +52,18 @@ header {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header-left-content {
+        margin: 0;
+    }
+}
+
 .navlink {
     margin: 0 15px;
     cursor: pointer;
@@ -67,4 +79,12 @@ header {
     scale: 1.2;
     box-shadow: 0 0 30px rgba(255, 255, 255, 08);
     animation: dance 2s infinite ease;
+}
+
+@media (max-width: 768px) {
+    .navlink:hover {
+        scale: 1;
+        box-shadow: none;
+        animation: none;
+    }
 }

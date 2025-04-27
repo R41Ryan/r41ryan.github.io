@@ -42,6 +42,13 @@
     object-fit: contain;
 }
 
+@media (max-width: 768px) {
+    .project-images img {
+        max-width: 100%;
+    }
+    
+}
+
 .project-links {
     display: flex;
     justify-content:flex-start;
@@ -81,4 +88,18 @@
     padding: 5px;
     border-radius: 5px;
     background-color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .project-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .project-links button:hover {
+        background-color: var(--color-primary);
+        color: var(--color-accent);
+        scale: 1;
+    }
 }

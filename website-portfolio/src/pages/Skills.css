@@ -18,6 +18,14 @@
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .skills_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
 .skills_content > div {
     width: 100%;
 }

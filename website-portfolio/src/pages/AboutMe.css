@@ -17,6 +17,14 @@
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .about-me_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
 .about-me_text-panel h3 {
     border-bottom: 2px solid var(--color-primary);
 }
