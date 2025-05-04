@@ -55,7 +55,7 @@ function MainPage({sectionRefs}) {
           <div className="home-page_buttons">
             <a
               download
-              href="documents/Ryan Huynh - Software Engineering Resume.pdf"
+              href="https://docs.google.com/document/d/1bxwgpBafRQmT4_kXyMfCZKB9rrOzw6wu1wZE5hsw92w/export?format=pdf"
             >
               <button>
                 <img src="images/box-arrow-down.svg" /> Download Resume
