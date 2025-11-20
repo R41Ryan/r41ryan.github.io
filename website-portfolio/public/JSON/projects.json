@@ -1,5 +1,14 @@
 [
     {
+        "id": "luxe-nail-bar",
+        "title": "Luxe Nail Bar Website",
+        "description": "A website for a nail salon in Diamond Valley, Alberta that allows users to book appointments, view services, and contact the salon.",
+        "technologies": ["React", "JavaScript", "CSS", "HTML"],
+        "images": ["images/luxe-nail-bar-logo-B1qX8sNc.png", "images/luxe_nail_bar_screenshot.PNG"],
+        "repo": "https://github.com/R41Ryan/luxe-nail-bar",
+        "link": "https://luxenailbardv.ca/"
+    },
+    {
         "id": "quick-maths",
         "title": "Quick Maths",
         "description": "A web app that helps you practice your mental maths skills. It generates random maths questions and gives you a score based on your performance.",
