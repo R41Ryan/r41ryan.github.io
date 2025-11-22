@@ -1,14 +1,10 @@
 .skills {
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary);
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 5%;
 }
 
 .skills h2 {
+    font-size: 4rem;
     border-bottom: 2px solid var(--color-primary);
 }
 
@@ -31,6 +27,7 @@
 }
 
 .skills_content h3 {
+    font-size: 2rem;
     display: flex;
     align-items: center;
     border-bottom: 2px solid var(--color-primary);

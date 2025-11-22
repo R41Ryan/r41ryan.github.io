@@ -1,15 +1,15 @@
 .projects {
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary);
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 5%;
 }
 
 .projects > h2 {
+    font-size: 4rem;
     border-bottom: 2px solid var(--color-primary);
+}
+
+.projects h3 {
+    font-size: 2rem;
 }
 
 .projects_content {
@@ -19,13 +19,17 @@
     gap: 2rem;
 }
 
+.projects_content p {
+    font-size: 1.2rem;
+}
+
 .project-panel {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border: 1px solid var(--color-primary);
     background-color: var(--color-accent);
-    padding: 1rem;
+    padding: 2%;
     border-radius: 10px;
 }
 
@@ -51,7 +55,7 @@
 
 .project-links {
     display: flex;
-    justify-content:flex-start;
+    justify-content: center;
     gap: 2rem;
     margin: 1rem 0;
     padding: 5px;
