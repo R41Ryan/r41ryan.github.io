@@ -4,8 +4,9 @@ import "./Skills.css";
 import "./Projects.css";
 import TextPanel from "../components/TextPanel";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-function MainPage({sectionRefs}) {
+function MainPage({ sectionRefs }) {
   const aboutMe = [
     {
       title: "📚 Early Interest in Coding",
@@ -44,7 +45,13 @@ function MainPage({sectionRefs}) {
 
   return (
     <main>
-      <section className="home-page">
+      <motion.section
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0 }}
+        viewport={{ once: true }}
+        className="home-page"
+      >
         <div className="home-page_content">
           <h1>Ryan Huynh</h1>
           <h2>Software Engineer</h2>
@@ -72,7 +79,11 @@ function MainPage({sectionRefs}) {
                 <img src="images/telephone.svg" /> Call Me: 587 (439-3288)
               </button>
             </a>
-            <a href="https://www.linkedin.com/in/ryan-huynh-7b5241194/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/ryan-huynh-7b5241194/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>
                 <img src="images/linkedin.svg" /> LinkedIn
               </button>
@@ -82,33 +93,61 @@ function MainPage({sectionRefs}) {
         <div className="home-page_image">
           <img src="/images/profile_img.jpg" alt="Ryan Huynh" />
         </div>
-      </section>
+      </motion.section>
       <div ref={sectionRefs.aboutMe} id="about-me" className="about-me">
-        <h2>💻 About Me</h2>
-        <p className="intro">
-          I'm a software engineering graduate from the University of Calgary. I
-          specialize in multiple programming languages, such as JavaScript and
-          C++, with experience in both web and desktop application development.
-          I enjoy solving problems through software and am always looking for
-          opportunities to innovate and build practical tools — whether it's a
-          website for a business or a game that helps train mental math skills.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0 }}
+          viewport={{ once: true }}
+        >
+          <h2>💻 About Me</h2>
+          <p className="intro">
+            I'm a software engineering graduate from the University of Calgary.
+            I specialize in multiple programming languages, such as JavaScript
+            and C++, with experience in both web and desktop application
+            development. I enjoy solving problems through software and am always
+            looking for opportunities to innovate and build practical tools —
+            whether it's a website for a business or a game that helps train
+            mental math skills.
+          </p>
+        </motion.div>
         <div className="about-me_content">
           {aboutMe.map((item, index) => (
-            <TextPanel
-              key={index}
-              title={item.title}
-              className="about-me_text-panel"
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.0 }}
+              viewport={{ once: true }}
             >
-              {item.content}
-            </TextPanel>
+              <TextPanel
+                key={index}
+                title={item.title}
+                className="about-me_text-panel"
+              >
+                {item.content}
+              </TextPanel>
+            </motion.div>
           ))}
         </div>
       </div>
       <section ref={sectionRefs.skills} id="skills" className="skills">
-        <h2>🎓 Skills</h2>
+        <motion.h2
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0 }}
+          viewport={{ once: true }}
+        >
+          🎓 Skills
+        </motion.h2>
         <div className="skills_content">
-          <div className="languages">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
+            className="languages"
+          >
             <h3>
               <img src="./images/code-square.svg" />
               <div>Languages</div>
@@ -121,8 +160,14 @@ function MainPage({sectionRefs}) {
               <li>HTML/CSS</li>
               <li>GDScript</li>
             </ul>
-          </div>
-          <div className="technologies">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
+            className="technologies"
+          >
             <h3>
               <img src="./images/gear.svg" />
               <div>Technologies</div>
@@ -135,8 +180,14 @@ function MainPage({sectionRefs}) {
               <li>Supabase</li>
               <li>Godot</li>
             </ul>
-          </div>
-          <div className="soft-skills">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
+            className="soft-skills"
+          >
             <h3>
               <img src="./images/chat-fill.svg" />
               <div>Soft Skills</div>
@@ -150,14 +201,32 @@ function MainPage({sectionRefs}) {
               <li>Creative Thinker</li>
               <li>Open to Feedback</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section ref={sectionRefs.projects} id="projects" className="projects">
-        {projects.length > 0 ? <h2>🌐 Projects</h2> : <h2>Loading Projects...</h2>}
+        {projects.length > 0 ? (
+          <motion.h2
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
+          >
+            🌐 Projects
+          </motion.h2>
+        ) : (
+          <h2>Loading Projects...</h2>
+        )}
         <div className="projects_content">
           {projects.map((project) => (
-            <div key={project.id} className="project-panel">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.0 }}
+              viewport={{ once: true }}
+              key={project.id}
+              className="project-panel"
+            >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               {project.images && (
@@ -200,7 +269,7 @@ function MainPage({sectionRefs}) {
                   </a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
